@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pl-PL">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dane faktury</title>
+    <link rel="stylesheet" href="invoiceDataStyle.css">
+</head>
+<body>
+    <div class="col">
+        <div>
+            <p>Miejsce wystawienia</p>
+            <input type="text" id="city">
+        </div>
+        <div>
+            <p>Data wykonania usługi</p>
+            <input type="date" id="date1">
+        </div>
+        <div>
+            <p>Data wystawienia</p>
+            <input type="date" id="date1">
+        </div>
+    </div>
+
+
+    <div class="col">
+        <div>
+        <p>Nr faktury</p>
+        <input type="text" id="invoiceNr">    
+        </div>
+        <div>
+            <p>Termin płatności</p>
+            <input type="text" id="paymentDeadline">        
+        </div>
+        <div>
+            <p>Sposób płatności</p>
+            <input type="text" id="paymentMethod">
+        </div>
+    </div>
+
+    <div id="invoiceItems">
+        <div class="item">
+            <span id="addItem" class="newItem">Dodaj nową pozycję</span> lub <span class="newItem">Wybierz z listy</span>
+            
+        </div>
+    </div>
+    <a href="./invoiceData.html"><button>Wygeneruj fakturę</button></a>
+</body>
+<script src="invoiceDataScript.js" defer></script>
+</html>

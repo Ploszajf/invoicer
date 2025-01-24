@@ -1,0 +1,131 @@
+:root{
+    --main-color: #8E9B90;
+    --color2: #93C0A4;
+    --color3: #B6C4A2;
+    --color4: #D4CDAB;
+    --color5: #DCE2BD;
+}
+
+body{
+    width: 95%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    background-color: var(--main-color);
+}
+
+p{
+    margin-bottom: 3px;
+}
+
+body > div{
+    width: 50%;
+    display: flex;
+    justify-content:start;
+    align-items: flex-start;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.col{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    text-align: center;
+    align-items: flex-start;
+}
+
+.col div{
+    width: 90%;
+    margin-bottom: 10px;
+}
+
+input{
+    width: 90%;
+    height: 24px;
+}
+
+#invoiceItems{
+    width: 95%;
+    background-color: var(--color3);
+    margin-bottom: 20px;
+    margin-top: 20px;
+}
+
+.item{
+    width: 100%;
+    background-color: var(--color5);
+    height: 36px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 5px;
+    margin-bottom: 10px;
+}
+.item:last-child{
+    background: none;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.newItem{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: var(--color4);
+    padding: 10px;
+    height: 26px;
+    border-radius: 20px;
+    width: 35%;
+    transition: .3s;
+}
+
+.newItem:hover{
+    background-color: var(--color3);
+    transition: 0.3s;
+}
+
+button{
+    background-color: var(--color2);
+    border: none;
+    width: 200px;
+    height: 24px;
+    transition: 0.3s;
+}
+
+button:hover{
+    background-color: var(--color3);
+}
+
+a:visited{
+    color: black;
+}
+
+a{
+    text-decoration: none;
+}
+
+.itemName{
+    width: 35%;
+}
+
+.unit{
+    width: 10%;
+}
+
+.ammount{
+    width: 10%;
+}
+
+.netPrice{
+    width: 15%;
+}
+
+.netValue{
+    width: 15%;
+}
+
+.vat{
+ width: 10%;
+}

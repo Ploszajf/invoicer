@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="pl-PL">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="indexStyle.css">
+    <title>Dane stron</title>
+</head>
+<body>
+    <div>
+    <h1>Sprzedawca</h1>
+    <div class="col" id="owner">
+    <div>
+        <p>Nazwa firmy</p>
+        <input type="text" id="ownerName" class="name">
+    </div>
+    <div>
+        <p>NIP</p>
+        <input type="text" id="ownerNIP">
+    </div>
+    <div>
+        <p>Adres linijka 1</p>
+        <input type="text" id="ownerAdress1">
+    </div>
+    <div>
+        <p>Adres linijka 2</p>
+        <input type="text" id="ownerAdress2">
+    </div>
+    <div>
+        <p>Numer konta</p>
+        <input type="text" id="bankAccountNr">
+    </div>
+    <div>
+        <p>Logo</p>
+        <input type="file" id="logo">
+    </div>
+    <div class="savedData">
+        lub <span>Użyj zapisanych danych</span>
+    </div>
+    </div>
+    </div>
+    </div>
+
+    <div>
+    <h1>Nabywca</h1>
+    <div class="col" id="buyer">
+        <div>
+        <p>Nazwa firmy</p>
+        <input type="text" id="buyerName" class="name">
+        </div>
+        <div>
+        <p>Adres linijka 1</p>
+        <input type="text" id="buyerAdress1">
+        </div>
+        <div>
+        <p>Adres linijka 2</p>
+        <input type="text" id="buyerAdress2">
+        </div>
+        <div>
+        <p>NIP</p>
+        <input type="text" id="buyerNIP">
+        </div>
+    </div>
+    </div>
+    <a href="./invoiceData.html"><button>Dalej</button></a>
+</body>
+<script src="indexScript.js" defer></script>
+</html>
