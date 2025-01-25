@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pl-PL">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="addBuyerSellerStyle.css">
+    <title>Dodaj nowego Sprzedawcę</title>
+</head>
+<body>
+    <div class="title">
+        <h1>Sprzedawca</h1>
+    </div>
+    <div class="col">
+        <div>
+            <span>Nazwa firmy</span>
+            <input type="text" id="sellerName">
+        </div>
+        <div>
+            <span>NIP</span>
+            <input type="text" id="sellerNIP">
+        </div>
+        <div>
+            <span>Numer konta bankowego</span>
+            <input type="text" id="sellerBankAccountNr">
+        </div>
+    </div>
+
+    <div class="col">
+        <div>
+            <span>Adres linijka 1</span>
+            <input type="text" id="sellerAdress1">
+        </div>
+        <div>
+            <span>Adres linijka 2</span>
+            <input type="text" id="sellerAdress2">
+        </div>
+        <div>
+            <span>Logo</span>
+            <input type="file" id="sellerLogo">
+        </div>
+    </div>
+
+    <div>
+        <button id="save">Zapisz</button>
+    </div>
+    <div>
+        <button id="cancel">Anuluj</button>
+    </div>
+</body>
+<script src="addSellerScript.js" defer></script>
+</html>

@@ -1,0 +1,67 @@
+:root{
+    --main-color: #8E9B90;
+    --color2: #93C0A4;
+    --color3: #B6C4A2;
+    --color4: #D4CDAB;
+    --color5: #DCE2BD;
+}
+
+body{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    background-color: var(--main-color);
+}
+
+.title{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+h1{
+    height: 40px;
+}
+
+.col{
+    width: 50%;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
+
+.col div{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 50px;
+}
+
+input{
+    width: 70%;
+    height: 24px;
+}
+
+span{
+    width: 100%;
+    text-align: center;
+    margin-bottom: 5px;
+}
+
+button{
+    background-color: var(--color2);
+    border: none;
+    width: 120px;
+    height: 36px;
+    transition: 0.3s;
+    margin-top: 40px;
+}
+
+button:hover{
+    background-color: var(--color3);
+    transition: 0.3s;
+}
