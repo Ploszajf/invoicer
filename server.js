@@ -9,6 +9,7 @@ app.use(express.json())
 
 let sellers = []
 let buyers = []
+let invoiceData = []
 
 app.post('/sellerData', (req, res) => {
     const data = req.body;
@@ -20,8 +21,20 @@ app.post('/sellerData', (req, res) => {
 app.post('/buyerData', (req, res) => {
     const data = req.body;
     buyers.push(data)
-    console.log(sellers)
+    console.log(buyers)
     res.send('Data received successfully');
+});
+
+app.post('/invoiceData', (req, res) => {
+    const data = req.body;
+    invoiceData[0] = data.Seller
+    invoiceData[1] = data.Buyer
+    console.log(invoiceData)
+    res.send('Data received successfully');
+});
+
+app.get('/indexData', (req, res) => {
+    res.json([sellers, buyers]);
 });
 
 app.use(express.static("static"))
